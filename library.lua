@@ -27,7 +27,7 @@ end
 
 
 function Library.JoinCountry(Country)
-    Abandon()
+    Library.Abandon()
     wait()
     CreateCountry:FireServer(Country.Name)
 end
@@ -98,7 +98,7 @@ function Library.SellAllResources()
             local CountriesTable = Countries:GetChildren()
             
             for Index, Country in pairs(CountriesTable) do
-                SellResource(Country, Resource.Name, Resource.Flow.Value)
+                Library.SellResource(Country, Resource.Name, Resource.Flow.Value)
                 ClearNotifs()
                 wait()
             end
