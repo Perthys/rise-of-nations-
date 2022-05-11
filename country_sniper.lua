@@ -1,4 +1,4 @@
-function Snipe (Settings)
+local function Snipe (Settings)
     if game.PlaceId == 3095043503 then
         if not game:IsLoaded() then
             game.Loaded:Wait()
