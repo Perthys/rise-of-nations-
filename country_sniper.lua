@@ -1,4 +1,4 @@
-return function Snipe(Settings)
+function Snipe (Settings)
     if game.PlaceId == 3095043503 then
         if not game:IsLoaded() then
             game.Loaded:Wait()
@@ -26,3 +26,5 @@ return function Snipe(Settings)
         CreateCountry:FireServer(Country)
     end
 end
+
+return Snipe
